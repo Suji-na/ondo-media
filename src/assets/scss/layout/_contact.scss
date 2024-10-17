@@ -1,0 +1,281 @@
+.contact {
+    &-block {
+        max-width: 1138px;
+        width: 100%;
+        margin-inline: auto;
+        // margin-top: 144px;
+        padding-bottom: 80px;
+        position: relative;
+
+        @include mq("tablet") {
+            // margin-top: 210px;
+            padding-bottom: 152px;
+        }
+
+        &::after {
+            content: none;
+            position: absolute;
+            width: 87px;
+            height: 22px;
+            background: url(../img/common/box.svg) no-repeat;
+            background-position: center;
+            background-size: cover;
+            top: -40%;
+            right: -6.5%;
+
+            @include mq("tablet") {
+                content: '';
+                right: 0;
+            }
+
+            @include mq("desktop") {
+                right: -6.5%;
+            }
+        }
+    }
+
+    .section-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+        margin-left: 0;
+
+        @include mq("tablet") {
+            margin-left: 60px;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 88px;
+            height: 14px;
+            background: url(../img/common/dots.svg) no-repeat;
+            background-position: center;
+            background-size: cover;
+            top: -20px;
+            left: 30px;
+
+            @include mq("tablet") {
+                width: 172px;
+                height: 27px;
+                top: -43px;
+                left: -45px;
+            }
+        }
+
+        &::after {
+            content: none;
+        }
+    }
+
+    .section-heading-main {
+        text-align: center;
+        margin-bottom: 0;
+
+        &::after {
+            top: 9px;
+            @include mq("tablet") {
+                top: 20px;
+            }
+
+            @include mq("desktop-lg") {
+                top: 35px;
+            }
+
+        }
+    }
+
+    .section-heading-sub {
+        text-align: center;
+
+        @include mq("tablet") {
+            text-align: left;
+        }
+        span{
+            margin-top: 0;
+        }
+    }
+
+    &-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 28px;
+
+        @include mq("tablet") {
+            flex-direction: row;
+            gap: 0;
+        }
+    }
+
+    &-col {
+        width: 100%;
+    }
+
+    &-btn {
+        background: linear-gradient(to right, #CE0020, #DB6500);
+        color: $color-white;
+        font-weight: 700;
+        width: 335px;
+        margin-inline: auto;
+        box-shadow: 0 0 10px rgb(0, 0, 0, .2);
+        border-radius: 4px;
+        font-size: 1.6rem;
+        line-height: calc(24/16);
+        padding-block: 21px;
+        text-decoration: none;
+
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border: 1px solid transparent;
+        transition: all .6s ease;
+
+        @include mq("tablet-wide") {
+            margin-inline: auto 0;
+            width: 475px;
+            font-size: 1.8rem;
+            line-height: calc(31/18);
+            padding-block: 36px;
+        }
+
+        &:hover {
+            background: $color-white;
+            color: #CE0020;
+
+            span {
+                &::before {
+                    background-color: #CE0020;
+                }
+            }
+
+            &::after {
+                background: url(../img/common/mail-hover.svg) no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        span {
+
+            &::before {
+                width: 34px;
+                height: 32px;
+                border-radius: 2px;
+                background-color: $color-white;
+
+                position: absolute;
+                content: '';
+                top: 18px;
+                right: 12px;
+
+                @include mq("tablet-wide") {
+                    width: 52px;
+                    height: 50px;
+
+                    top: 29px;
+                    right: 16px;
+                }
+            }
+        }
+
+        &::after {
+            background: url(../img/common/mail.svg) no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 11px;
+            height: 9px;
+
+            position: absolute;
+            content: '';
+            top: 29px;
+            right: 23px;
+
+            @include mq("tablet-wide") {
+                width: 18px;
+                height: 15px;
+                top: 45px;
+                right: 33px;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            background: url(../img/common/plus.svg) no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 79px;
+            height: 54px;
+            top: 40px;
+            left: -12px;
+            z-index: -1;
+
+            @include mq("tablet") {
+                width: 120px;
+                height: 82px;
+                top: 50px;
+                left: -60px;
+            }
+        }
+    }
+}
+
+.top-btn {
+    text-decoration: none;
+    clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+    background-color: $color-sec;
+    color: $color-white;
+    font-family: $font-sec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    padding-block: 5px 6px;
+    max-width: 367px;
+    width: 100%;
+    margin-inline: auto 0;
+    padding-left: 0;
+    font-size: 2rem;
+    line-height: calc(37/20);
+    letter-spacing: 1px;
+    position: relative;
+    transition: all .4s ease;
+
+    @include mq("tablet") {
+        max-width: 468px;
+        padding-block: 43px 26px;
+        padding-left: 126px;
+        justify-content: flex-start;
+
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        background: url(../img/common/top.svg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 10px;
+        height: 12px;
+        top: 16px;
+        left: 58%;
+
+        @include mq("tablet") {
+            top: 30px;
+            left: 30%;
+
+        }
+    }
+
+    &:hover {
+        opacity: .8;
+    }
+}

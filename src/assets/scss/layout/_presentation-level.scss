@@ -1,0 +1,19 @@
+.presentation-level {
+    .breadcrumb {
+        &::before {
+            background: url(../img/presentation-level/presentation-level-bg.png) no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    .category {
+        &-wpr {
+            &::before {
+                background: url(../img/presentation-level/presentation-wpr-bg.png) no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+}

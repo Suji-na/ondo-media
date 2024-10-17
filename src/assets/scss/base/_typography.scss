@@ -1,0 +1,723 @@
+.section {
+    padding-block: 77px 66px;
+
+    @include mq("tablet") {
+        padding-block: 152px;
+
+    }
+
+    &-header {
+        margin-bottom: 36px;
+        position: relative;
+
+        @include mq("tablet") {
+            margin-bottom: 81px;
+
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 88px;
+            height: 14px;
+            background: url(../img/common/dots.svg) no-repeat;
+            background-position: center;
+            background-size: cover;
+            top: -60px;
+            left: 6px;
+
+            @include mq("tablet") {
+                width: 253px;
+                height: 40px;
+                top: -95px;
+                left: -31px;
+
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 93px;
+            height: 3px;
+            background: url(../img/common/bar-sp.svg) no-repeat;
+            background-position: center;
+            background-size: cover;
+            top: -15px;
+            right: 5px;
+
+            @include mq("tablet") {
+                background: url(../img/common/bar.svg) no-repeat;
+                width: 236px;
+                height: 35px;
+                top: 0;
+                right: -10px;
+            }
+
+            @include mq("desktop-sm") {
+                right: -23px;
+            }
+        }
+
+    }
+
+    &-heading {
+        &-main {
+            color: $color-white;
+            width: fit-content;
+            position: relative;
+            font-weight: 500;
+            font-size: 3.6rem;
+            line-height: calc(43/36);
+            letter-spacing: normal;
+            margin-bottom: 12px;
+
+
+            &.green::after {
+                top: 10px;
+                right: -12px;
+                width: 6px;
+                height: 6px;
+            }
+
+            &.purple::after {
+                top: 10px;
+                right: -12px;
+                width: 6px;
+                height: 6px;
+            }
+
+            &.orange::after {
+                top: 10px;
+                right: -12px;
+                width: 6px;
+                height: 6px;
+            }
+
+            &.blue::after {
+                top: 10px;
+                right: -12px;
+                width: 6px;
+                height: 6px;
+            }
+
+            @include mq("tablet") {
+                font-size: 4.5rem;
+                line-height: calc(45/28);
+                letter-spacing: .01em;
+                margin-bottom: 40px;
+
+                &.green::after {
+                    top: 20px;
+                    right: -20px;
+                    width: 10px;
+                    height: 10px;
+                }
+
+                &.purple::after {
+                    top: 20px;
+                    right: -20px;
+                    width: 10px;
+                    height: 10px;
+                }
+
+                &.orange::after {
+                    top: 20px;
+                    right: -20px;
+                    width: 10px;
+                    height: 10px;
+                }
+
+                &.blue::after {
+                    top: 20px;
+                    right: -20px;
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+
+            @include mq("desktop") {
+                font-size: 6.4rem;
+                line-height: calc(64/37);
+
+                &.green::after {
+                    top: 32px;
+                }
+
+                &.purple::after {
+                    top: 32px;
+                }
+
+                &.orange::after {
+                    top: 32px;
+                }
+
+                &.blue::after {
+                    top: 32px;
+                }
+            }
+        }
+
+        &-sub {
+            color: $color-white;
+            font-size: 1.4rem;
+            line-height: calc(20/14);
+
+            @include mq("tablet") {
+                font-size: 1.8rem;
+                line-height: calc(25/24);
+            }
+
+            @include mq("desktop") {
+                font-size: 2.4rem;
+            }
+
+            &>span {
+                margin-top: 21px;
+                display: block;
+                font-size: 1.4rem;
+                line-height: calc(25/14);
+
+                @include mq("tablet") {
+                    margin-top: 17px;
+                    font-size: 1.6rem;
+                    line-height: calc(26/16);
+                }
+
+                @include mq("desktop") {
+                    font-size: 1.8rem;
+                    line-height: calc(32/18);
+                }
+            }
+        }
+    }
+}
+
+.btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 335px;
+    width: 100%;
+    margin-inline: auto;
+    text-decoration: none;
+    box-shadow: 0 5px 12px rgb(0, 0, 0, .3);
+    box-shadow: inset 0 0 10px $color-blue03;
+    background-color: $color-blue04;
+    color: $color-white;
+    transition: all .4s ease;
+    border-radius: 4px;
+    padding-block: 18px 19px;
+    font-size: 1.4rem;
+    line-height: calc(19/14);
+
+    @include mq("tablet") {
+        max-width: 388px;
+        padding-block: 19px 20px;
+        font-size: 1.8rem;
+        line-height: calc(24/18);
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        background: url(../img/common/arrow-white.svg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 9px;
+        height: 7px;
+        top: 27px;
+        right: 16px;
+    }
+
+    &:hover {
+        background-color: $color-white;
+        color: $color-blue04;
+        box-shadow: inset 0 0 10px $color-blue04;
+
+        &::after {
+            background: url(../img/common/arrow-blue.svg) no-repeat;
+        }
+    }
+}
+
+.btn-sec {
+    max-width: 400px;
+    color: $color-blue;
+    background: $color-white;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: calc(24/18);
+    padding-block: 22px 23px;
+    padding-left: 36px;
+    box-shadow: 0 5px 12px rgb(0, 0, 0);
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        background: url(/../assets/img/btn-icon.svg);
+        width: 9px;
+        height: 7px;
+        top: 0;
+        right: 0;
+    }
+}
+
+.fixed-btn {
+    position: fixed;
+    right: 7px;
+    bottom: 70px;
+    width: fit-content;
+    background: $color-white;
+    color: $color-blue04;
+    text-decoration: none;
+    border: 1px solid $color-blue04;
+    border-radius: 4px;
+    z-index: 20;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6.4px;
+    padding: 11px 14px 12px 15px;
+
+    font-family: $font-sec;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: calc(17 / 14);
+    letter-spacing: .01em;
+
+    img {
+        transform: rotate(-90deg);
+    }
+
+    @include mq("tablet") {
+        display: none;
+    }
+}
+
+.white::after {
+    position: absolute;
+    content: '';
+    background-color: $color-white;
+    width: 6px;
+    height: 6px;
+    top: 27px;
+    right: -18px;
+
+    @include mq("tablet") {
+        width: 10px;
+        height: 10px;
+        top: 33px;
+        right: -25px;
+    }
+}
+
+.blue::after {
+    position: absolute;
+    content: '';
+    background: linear-gradient(70deg, $color-blue02 , $color-skyblue);
+    width: 6px;
+    height: 6px;
+    top: 6px;
+    right: -15px;
+}
+
+.green::after {
+    position: absolute;
+    content: '';
+    background: linear-gradient(70deg, $color-green , $color-green01);
+    width: 6px;
+    height: 6px;
+    top: 6px;
+    right: -15px;
+}
+
+.orange::after {
+    position: absolute;
+    content: '';
+    background: linear-gradient(70deg, $color-orange , $color-orange01);
+    width: 6px;
+    height: 6px;
+    top: 6px;
+    right: -15px;
+}
+
+.purple::after {
+    position: absolute;
+    content: '';
+    background: linear-gradient(70deg, $color-purple , $color-purple01);
+    width: 6px;
+    height: 6px;
+    top: 6px;
+    right: -15px;
+}
+
+.lime::after {
+    position: absolute;
+    content: '';
+    background-color: $color-lime;
+    width: 6px;
+    height: 6px;
+    top: 0;
+    right: -15px;
+}
+
+.d-blue::after {
+    position: absolute;
+    content: '';
+    background-color: $color-blue04;
+    width: 6px;
+    height: 6px;
+    top: 14px;
+    left: 19px;
+}
+
+.txt-blue {
+    color: $color-blue02 !important;
+}
+
+.txt-orng {
+    color: $color-orange !important;
+}
+
+.txt-green {
+    color: $color-green !important;
+}
+
+.txt-purp {
+    color: $color-purple !important;
+}
+
+.d-n,
+.d-n-xs {
+    display: none !important;
+}
+
+.d-i,
+.d-i-xs {
+    display: inline !important;
+}
+
+.d-b,
+.d-b-xs {
+    display: block !important;
+}
+
+.d-f,
+.d-f-xs {
+    display: flex !important;
+}
+
+.d-ib,
+.d-ib-xs {
+    display: inline-block !important;
+}
+
+@media (min-width: 576px) {
+    .d-n-sm {
+        display: none !important;
+    }
+
+    .d-i-sm {
+        display: inline !important;
+    }
+
+    .d-b-sm {
+        display: block !important;
+    }
+
+    .d-f-sm {
+        display: flex !important;
+    }
+
+    .d-ib-sm {
+        display: inline-block !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .d-n-md {
+        display: none !important;
+    }
+
+    .d-i-md {
+        display: inline !important;
+    }
+
+    .d-f-md {
+        display: flex !important;
+    }
+
+    .d-b-md {
+        display: block !important;
+    }
+
+    .d-ib-md {
+        display: inline-block !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .d-n-lg {
+        display: none !important;
+    }
+
+    .d-i-lg {
+        display: inline !important;
+    }
+
+    .d-f-lg {
+        display: flex !important;
+    }
+
+    .d-b-lg {
+        display: block !important;
+    }
+
+    .d-ib-lg {
+        display: inline-block !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .d-n-xl {
+        display: none !important;
+    }
+
+    .d-i-xl {
+        display: inline !important;
+    }
+
+    .d-f-xl {
+        display: flex !important;
+    }
+
+    .d-b-xl {
+        display: block !important;
+    }
+
+    .d-ib-xl {
+        display: inline-block !important;
+    }
+}
+
+
+.breadcrumb {
+    margin-top: 50px;
+    padding-block: 19px 26px;
+    position: relative;
+
+    @include mq("tablet") {
+        margin-top: 111px;
+        padding-block: 34px 44px;
+    }
+
+    @include mq("tablet-wide") {
+        margin-top: 78px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        background: url(../img/column-level/column-level-bg.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        width: 100%;
+        height: 260px;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        @include mq("tablet") {
+            height: 426px;
+        }
+    }
+
+    &-ul {
+        display: flex;
+        align-items: center;
+        gap: 27px;
+        margin-left: -10px;
+
+        @include mq("tablet") {
+            gap: 41px;
+            margin-left: 0;
+        }
+    }
+
+    &-link {
+        font-size: 1.2rem;
+        line-height: calc(17/12);
+
+        color: $color-white;
+        position: relative;
+
+        &:hover {
+            color: $color-gray01;
+        }
+
+        @include mq("tablet") {
+            font-size: 1.8rem;
+            line-height: calc(26/18);
+        }
+
+        &.-home {
+            text-decoration: underline;
+
+            &::after {
+                content: '';
+                position: absolute;
+                background: url(../img/common/arrow-right.svg) no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                width: 4px;
+                height: 7px;
+                top: 6px;
+                right: -16px;
+
+                @include mq("tablet") {
+                    width: 7px;
+                    height: 10px;
+                    top: 9px;
+                    right: -24px;
+                }
+            }
+        }
+
+        &.-active {
+            text-decoration: none;
+        }
+    }
+}
+
+
+.category {
+
+    &-block {
+
+        .section {
+            padding-top: 0;
+        }
+
+        .article {
+            padding-block: 47px 62px;
+
+            @include mq("tablet") {
+                padding-block: 63px 159px;
+            }
+
+            .section-heading-main.white::after {
+                right: -12px;
+
+                @include mq("tablet") {
+                    right: 40%;
+                }
+            }
+
+            &-row {
+                align-items: flex-start;
+            }
+        }
+    }
+
+    &-header {
+
+        &-heading {
+            color: $color-white;
+            font-family: $font-sec;
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: calc(17/14);
+            letter-spacing: .01em;
+
+            margin-bottom: 0;
+            position: relative;
+            width: fit-content;
+
+            &::after {
+                width: 3px;
+                height: 3px;
+                top: 3px;
+                right: -7px;
+
+                @include mq("tablet") {
+                    width: 6px;
+                    height: 6px;
+                    top: 11px;
+                    right: -10px;
+                }
+            }
+
+            @include mq("tablet") {
+                font-size: 2rem;
+                line-height: calc(37/20);
+                letter-spacing: .01em;
+                margin-bottom: 9px;
+            }
+        }
+
+        &-desc {
+            color: $color-white;
+            font-size: 3.2rem;
+            line-height: calc(48/32);
+            margin-bottom: 31px;
+
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 13px;
+
+            .-sm {
+                font-size: 1.4rem;
+                line-height: calc(25/14);
+            }
+
+            @include mq("tablet") {
+
+                flex-direction: row;
+                align-items: center;
+                gap: 30px;
+
+                .-sm {
+                    font-size: 1.8rem;
+                    line-height: calc(26/18);
+                }
+            }
+
+            @include mq("tablet-wide") {
+                font-size: 4.8rem;
+                line-height: calc(48/25);
+                gap: 64px;
+
+                .-sm {
+                    font-size: 3.2rem;
+                    line-height: calc(56/32);
+                }
+            }
+        }
+
+        &-img {
+            margin-left: 20px;
+
+            @include mq("tablet") {
+                margin-left: 0;
+            }
+
+            img {
+                margin-inline: auto;
+                border-radius: 4px 0 0 4px;
+
+                @include mq("tablet") {
+                    border-radius: 4px;
+                }
+            }
+
+        }
+    }
+}

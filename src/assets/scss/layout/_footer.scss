@@ -1,0 +1,78 @@
+.footer {
+    background-color: $color-white;
+    &-block {
+        max-width: 1240px;
+        width: 100%;
+        margin-inline: auto;
+        padding-block: 25px 32px;
+        padding-inline: 10px;
+
+        @include mq("tablet") {
+            padding-block: 11px 12px;
+        }
+
+        @include mq("desktop-sm") {
+            padding-block: 11px 12px;
+            padding-inline: 0;
+        }
+    }
+
+    &-wpr {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mq("tablet") {
+            flex-direction: row;
+            gap: 0;
+        }
+    }
+
+    &-lft {
+        display: inline-flex;
+        gap: 41px;
+
+        @include mq("tablet") {
+            gap: 47px;
+        }
+    }
+
+    &-rgt {
+        font-family: $font-noto;
+        font-size: 1.1rem;
+        line-height: calc(16/11);
+
+        @include mq("tablet") {
+            font-size: 1.2rem;
+            line-height: calc(17/12);
+        }
+    }
+
+    &-link {
+
+        &-lft,
+        &-rgt {
+            text-decoration: none;
+            font-size: 1rem;
+            letter-spacing: .05em;
+            line-height: calc(14/10);
+            color: $color-black01;
+            transition: all .4s ease;
+
+            &:hover {
+                color: $color-blue04;
+            }
+        }
+
+        &-rgt {
+            border-left: 1px solid #CCCCCC;
+            padding-left: 18px;
+
+            @include mq("tablet") {
+                padding-left: 20px;
+            }
+        }
+    }
+}

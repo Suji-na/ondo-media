@@ -1,0 +1,185 @@
+.tag {
+    position: relative;
+    isolation: isolate;
+    margin-bottom: 72px;
+    @include mq("tablet") {
+        margin-bottom: 200px;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        inset: 0;
+        z-index: -1;
+        background: url(../img/tag/tag-bg-sp.png) no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+
+        @include mq("tablet") {
+            background: url(../img/tag/tag-bg-pc.png) no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+        }
+    }
+
+    &-wpr {
+        background-color: transparent;
+        padding-block: 32px;
+        padding-inline: 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+
+        @include mq("tablet") {
+            padding-block: 51px 53px;
+            padding-inline: 39px 51px;
+            flex-direction: row;
+            gap: 48px;
+        }
+
+        &-rgt {
+            flex: 1;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                background: url(../img/tag/graph.png) no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 70px;
+                height: 13px;
+                transform: rotate(-90deg);
+                top: -60px;
+                right: -40px;
+
+                @include mq("tablet") {
+                    width: 117px;
+                    height: 23px;
+                    transform: rotate(0deg);
+                    top: -12px;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    &-ttl {
+        display: flex;
+        align-items: flex-end;
+        gap: 27px;
+        font-family: $font-sec;
+        font-weight: 500;
+        color: $color-white;
+        margin-top: 0;
+
+        @include mq("tablet") {
+            margin-top: -35px;
+        }
+
+        .-main {
+
+            writing-mode: horizontal-tb;
+            font-size: 3.6rem;
+            line-height: calc(80/36);
+            position: relative;
+
+            @include mq("tablet") {
+                writing-mode: vertical-lr;
+                font-size: 4.4rem;
+                line-height: calc(80/44);
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                background: $color-white;
+                width: 8px;
+                height: 8px;
+                top: 24px;
+                right: -12px;
+
+                @include mq("tablet") {
+                    top: 90px;
+                    right: 22px;
+                }
+            }
+        }
+    }
+
+    &-desc {
+        color: $color-white;
+        font-size: 1.4rem;
+        line-height: calc(24/14);
+        margin-bottom: 20px;
+
+        @include mq("tablet") {
+            font-size: 2.8rem;
+            line-height: calc(28/24);
+        }
+    }
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 16px;
+        row-gap: 20px;
+    }
+
+    &-link {
+        text-decoration: none;
+        border: 1px solid $color-sec;
+        color: $color-primary;
+        background: $color-white;
+
+        font-size: 1.4rem;
+        line-height: calc(20/14);
+
+        position: relative;
+        border-radius: 4px;
+        padding-block: 9px;
+        padding-inline: 11px 26px;
+        transition: all .4s ease;
+
+        @include mq("tablet") {
+            padding-block: 12px;
+            padding-inline: 16px 29px;
+
+            font-size: 1.8rem;
+            line-height: calc(26/18);
+        }
+
+        &:hover {
+            background: $color-primary;
+            color: $color-white;
+
+            &::after {
+                background: url(../img/common/arrow-white-sm.svg);
+                @include mq("tablet") {
+                    background: url(../img/common/arrow-white.svg);
+                }
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            background: url(../img/common/arrow-blue-sm.svg);
+            width: 6px;
+            height: 5px;
+
+            top: 18px;
+            right: 10px;
+            @include mq("tablet") {
+                background: url(../img/common/arrow-blue.svg);
+                width: 8px;
+                height: 7px;
+
+                top: 23px;
+                right: 12px;
+            }
+        }
+    }
+}

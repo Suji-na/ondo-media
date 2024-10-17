@@ -1,0 +1,21 @@
+import { smoothScroll } from "./components/smoothScroll";
+import { showOnScroll } from "./components/showOnScroll";
+import { toggleNavigation } from "./components/toggleNavigation";
+import { scrollToTop } from "./components/scrollTotop";
+import { newsSwiper } from "./components/newsSwiper";
+import { linkSwiper } from "./components/linkSwiper";
+import { closeWindow } from "./components/closeWindow";
+import { slick } from "./components/slick";
+import { animateOnScroll } from "./components/animateOnScroll";
+import {onClick} from "./components/onClick";
+
+newsSwiper();
+closeWindow();
+slick();
+linkSwiper();
+smoothScroll();
+showOnScroll();
+scrollToTop();
+toggleNavigation();
+onClick();
+animateOnScroll();

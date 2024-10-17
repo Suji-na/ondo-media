@@ -1,0 +1,127 @@
+.column-list {
+
+    .breadcrumb {
+
+        @include mq("tablet") {
+            padding-block: 36px 78.4px;
+        }
+    }
+
+    .category-header {
+
+        &-heading {
+            line-height: calc(19/14);
+
+            @include mq("tablet") {
+                line-height: calc(27/20);
+            }
+        }
+
+        &-desc {
+            margin-bottom: 36px;
+
+            @include mq("tablet") {
+                margin-bottom: 56px;
+            }
+
+            .-sm {
+                font-size: 3.2rem;
+                line-height: calc(48/32);
+
+                @include mq("tablet") {
+                    font-size: 4.8rem;
+                    line-height: calc(64/48);
+                }
+            }
+        }
+
+    }
+
+    .category-tag-list {
+        margin-bottom: 30px;
+
+        @include mq("tablet") {
+            margin-bottom: 80px;
+        }
+    }
+
+    .pagination {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+
+        @include mq("tablet") {
+            gap: 24px;
+        }
+
+        &.-section {
+            margin-block: 42px 79px;
+
+            @include mq("tablet") {
+                margin-block: 87px 152px;
+            }
+        }
+
+        .active {
+            background-color: #0943FF !important;
+            color: #FFFFFF !important;
+        }
+
+        .dot-wpr {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 6px;
+
+            .dot {
+                width: 4px;
+                height: 4px;
+                background-color: #6C7183;
+            }
+        }
+
+        .left-arrow {
+            transform: rotate(180deg);
+
+            .margin {
+                display: none;
+
+                @include mq("tablet") {
+                    display: block;
+                }
+            }
+
+        }
+
+        .right-arrow {
+
+            .margin {
+                display: none;
+
+                @include mq("tablet") {
+                    display: block;
+                }
+            }
+        }
+
+        .txt {
+            background: #FFFFFF;
+            font-size: 2.4rem;
+            letter-spacing: 0.01em;
+            color: #11344D;
+            padding: 8px 18px;
+            text-decoration: none;
+            width: 48px;
+            height: 46px;
+            border-radius: 2px;
+
+            @include mq("tablet") {
+                width: 56px;
+                height: 54px;
+                padding: 11px 21px 11px 22px;
+            }
+        }
+    }
+}

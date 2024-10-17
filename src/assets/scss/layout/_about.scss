@@ -1,0 +1,434 @@
+.about {
+    // padding-block: 39px 25px;
+
+    // @include mq("tablet") {
+    //     padding-block: 75px 100px;
+    // }
+
+    // .tag {
+    //     margin-bottom: 0;
+    // }
+
+    // &-block {
+    //     max-width: 1200px;
+    //     width: 100%;
+    //     margin-inline: auto;
+    //     margin-top: 52px;
+
+    //     @include mq("tablet") {
+    //         margin-top: 75px;
+    //     }
+
+    //     @include mq("desktop-lg") {
+    //         max-width: 1368px;
+    //         margin-inline: auto 193px;
+    //     }
+    // }
+
+    // &-heading {
+    //     font-family: $font-sec;
+    //     color: $color-white;
+    //     font-weight: 500;
+    //     font-size: 3.6rem;
+    //     line-height: calc(80/36);
+    //     letter-spacing: .01em;
+
+    //     width: fit-content;
+    //     position: relative;
+    //     margin-bottom: 10px;
+
+    //     @include mq("tablet") {
+    //         font-size: 4.5rem;
+    //         line-height: calc(60/45);
+    //         margin-bottom: 20px;
+    //     }
+    //     @include mq("desktop-sm") {
+    //         font-size: 6.4rem;
+    //         line-height: calc(64/37);
+    //     }
+
+    //     // @include mq("desktop-lg") {
+    //     //     padding-left: 0;
+    //     // }
+    // }
+
+    // &-box {
+    //     margin-left: 0;
+
+    //     @include mq("tablet") {
+    //         margin-left: 40px;
+    //     }
+    //     @include mq("desktop-sm") {
+    //         margin-left: 65px;
+    //     }
+
+    //     &-ttl {
+    //         font-size: 1.8rem;
+    //         line-height: calc(27/18);
+    //         margin-bottom: 16px;
+    //         position: relative;
+
+    //         &::after {
+    //             position: absolute;
+    //             content: none;
+    //             background: url(../img/common/circle.svg) no-repeat;
+    //             background-position: center;
+    //             background-size: cover;
+    //             width: 76px;
+    //             height: 76px;
+    //             top: -20px;
+    //             right: 30px;
+    //         }
+
+    //         @include mq("tablet") {
+    //             font-size: 2rem;
+    //             line-height: calc(32/20);
+    //             margin-bottom: 20px;
+
+    //             &::after {
+    //                 content: '';
+    //             }
+    //         }
+
+    //         @include mq("desktop-sm") {
+    //             font-size: 2.8rem;
+    //             line-height: calc(49/28);
+    //             margin-bottom: 36px;
+    //         }
+    //     }
+
+    //     &-desc {
+    //         font-size: 1.4rem;
+    //         line-height: calc(25/14);
+    //         margin-bottom: 28px;
+
+    //         @include mq("desktop-sm") {
+    //             font-size: 1.6rem;
+    //             line-height: calc(28/16);
+    //             margin-bottom: 57px;
+    //         }
+    //     }
+    // }
+
+    // &-row {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: flex-start;
+
+    //     @include mq("tablet") {
+    //         flex-direction: row;
+    //         align-items: center;
+    //     }
+    // }
+
+    // &-col {
+    //     color: $color-white;
+    //     width: 100%;
+
+    //     // &:last-child {
+    //     //     flex: 1
+    //     // }
+
+    //     &:first-child {
+    //         max-width: 709px;
+    //         z-index: 2;
+    //         padding-inline: 20px;
+
+    //         @include mq("desktop-sm") {
+    //             padding-inline: 0;
+    //         }
+    //     }
+
+    //     &-note {
+    //         text-align: center;
+    //         font-size: 1rem;
+    //         line-height: calc(16/10);
+
+    //         position: absolute;
+    //         bottom: -7%;
+    //         right: 32%;
+
+    //         @include mq("tablet") {
+    //             text-align: left;
+    //             font-size: 1.4rem;
+    //             line-height: calc(21/14);
+
+    //             bottom: 14%;
+    //             right: 5%;
+    //         }
+
+    //         @include mq("desktop-sm") {
+    //             bottom: 22%;
+    //             right: 24%;
+    //         }
+    //     }
+
+    //     &-img{
+    //         margin-inline: auto;
+    //         @include mq("tablet") {
+    //             margin-inline: 0;
+    //         }
+    //     }
+
+    //     &:last-child {
+    //         margin-left: 0;
+    //         position: relative;
+
+    //         @include mq("tablet") {
+    //             margin-left: -80px;
+    //         }
+
+    //         @include mq("tablet-wide") {
+    //             margin-left: -100px;
+    //         }
+
+    //         @include mq("desktop-sm") {
+    //             margin-left: -170px;
+    //         }
+
+    //         &::before {
+    //             content: none;
+    //             position: absolute;
+    //             width: 87px;
+    //             height: 22px;
+    //             background: url(../img/common/box.svg) no-repeat;
+    //             background-position: center;
+    //             background-size: cover;
+    //             top: -29px;
+    //             right: 16%;
+
+    //             @include mq("tablet") {
+    //                 content: '';
+    //             }
+    //         }
+
+    //         &::after {
+    //             content: none;
+    //             position: absolute;
+    //             width: 178px;
+    //             height: 28px;
+    //             background: url(../img/common/dots.svg) no-repeat;
+    //             background-position: center;
+    //             background-size: cover;
+    //             bottom: 65px;
+    //             right: 8%;
+    //             transform: rotateY(180deg);
+
+    //             @include mq("tablet") {
+    //                 content: '';
+    //                 bottom: 0;
+    //                 right: 8%;
+    //             }
+
+    //             @include mq("desktop-sm") {
+    //                 bottom: 65px;
+    //                 right: 8%;
+    //             }
+    //         }
+    //     }
+    // }
+
+    // &-btn {
+    //     font-family: $font-noto;
+    //     display: flex;
+    //     justify-content: center;
+    //     text-decoration: none;
+    //     position: relative;
+    //     background-color: $color-blue;
+    //     color: $color-white;
+    //     margin-inline: auto;
+
+    //     // border-left: 3px solid $color-blue04;
+    //     box-shadow: 0 5px 12px rgb(0, 0, 0, .3);
+    //     border-radius: 4px;
+    //     max-width: 335px;
+    //     width: 100%;
+    //     font-size: 1.4rem;
+    //     line-height: calc(19/14);
+    //     padding-block: 19px 18px;
+    //     transition: all .6s ease;
+
+    //     @include mq("tablet") {
+    //         margin-inline: 0;
+    //         max-width: 400px;
+    //         font-size: 1.8rem;
+    //         line-height: calc(24/18);
+    //         padding-block: 22px 23px;
+    //     }
+
+    //     &::after {
+    //         position: absolute;
+    //         content: '';
+    //         background: url(../img/common/arrow-white.svg) no-repeat;
+    //         background-position: center;
+    //         background-size: cover;
+    //         width: 9px;
+    //         height: 7px;
+    //         top: 26px;
+    //         right: 15px;
+
+    //         @include mq("tablet") {
+    //             top: 29px;
+    //             right: 24px;
+    //         }
+    //     }
+
+    //     &:hover {
+    //         background-color: $color-white;
+    //         color: $color-blue;
+
+    //         &::after {
+    //             background: url(../img/common/about-btn.svg) no-repeat;
+    //         }
+    //     }
+
+    //     &::before {
+    //         position: absolute;
+    //         content: none;
+    //         background: url(../img/common/plus.svg) no-repeat;
+    //         background-position: center;
+    //         background-size: cover;
+    //         width: 120px;
+    //         height: 82px;
+    //         top: 52px;
+    //         left: -71px;
+    //         z-index: -1;
+
+    //         @include mq("tablet") {
+    //             content: '';
+    //         }
+    //     }
+    // }
+
+    padding-block: 77px 67px;
+    @include mq("tablet") {
+        padding-block: 88.6px 67.6px;
+    }
+
+    &-block {
+        max-width: 954px;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+    &-row {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        @include mq("tablet") {
+            flex-direction: row;
+        }
+    }
+
+    &-col {
+        &.-lft {
+            margin-right: 0;
+            padding-inline: 20px 8.8px;
+
+            @include mq("tablet") {
+                margin-right: -65px;
+                padding-inline: 0;
+            }
+        }
+
+        &:last-child {
+            padding-inline: 20px;
+
+            @include mq("tablet") {
+                padding-inline: 0;
+            }
+        }
+
+        &--ttl {
+            color: $color-white;
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: calc(26.7 / 18);
+            margin-bottom: 23.9px;
+
+            @include mq("tablet") {
+                font-size: 2.1rem;
+                line-height: calc(34 / 21);
+                margin-bottom: 33px;
+            }
+
+            @include mq("tablet-wide") {
+                font-size: 2.8rem;
+                line-height: calc(44.5 / 28);
+            }
+
+            .f-oswald {
+                font-family: $font-oswald;
+            }
+        }
+
+        &--desc {
+            color: $color-white;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: calc(23.75 / 14);
+            margin-bottom: 0;
+
+            @include mq("tablet") {
+                font-size: 1.5rem;
+                line-height: calc(26 / 15);
+                margin-bottom: 28.4px;
+            }
+
+            @include mq("tablet-wide") {
+                font-size: 1.6rem;
+                line-height: calc(26 / 16);
+            }
+        }
+
+        &--txt {
+            text-align: center;
+            color: $color-white;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: calc(15.5 / 10);
+            margin-top: 7.9px;
+            width: fit-content;
+            margin-inline: auto;
+            @include mq("tablet") {
+                text-align: left;
+                font-size: 1.4rem;
+                line-height: calc(20.5 / 14);
+                margin-top: 16px;
+            }
+        }
+
+        &--btn {
+            text-decoration: none;
+            width: fit-content;
+            transition: all .2s ease;
+            color: $color-white;
+            border: 1px solid $color-white;
+            border-radius: 3px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 66px;
+
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: calc(19 / 14);
+            padding: 13px 6px 13px 8px;
+            margin-top: 19.6px;
+            margin-inline: auto;
+
+            @include mq("tablet-wide") {
+                margin-top: 19.6px;
+                margin-inline: 0;
+                padding: 13px 10px 13px 12px;
+            }
+
+            &:hover {
+                background: $color-primary;
+            }
+        }
+    }
+}

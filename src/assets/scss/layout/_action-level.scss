@@ -1,0 +1,19 @@
+.action-level {
+    .breadcrumb {
+        &::before {
+            background: url(../img/action-level/action-level-bg.png) no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    .category {
+        &-wpr {
+            &::before {
+                background: url(../img/action-level/action-wpr-bg.png) no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+}
